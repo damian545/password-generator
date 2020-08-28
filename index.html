@@ -3,7 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Passwor-Generator 2020</title>
+    <meta http-equiv="X-UA-Compatiable" content="ie-edge" />
+    <script
+      src="https://kit.fontawesome.com/3dala747b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Password-Generator 2020</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h2>Password-Generator</h2>
+      <div class="results-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label for="length">Password Length</label>
+          <input type="number" id="length" min="8" max="40" value="40" />
+        </div>
+        <div class="setting">
+          <label for="uppercase">Include Uppercase Letters</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="setting">
+          <label for="lowercase">Include Lowercase Letters</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="setting">
+          <label for="numbers">Include Numbers</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="setting">
+          <label for="symbols">Include Symbols</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+      </div>
+      <button class="btn btn-large" id="generate">
+        Generate Password
+      </button>
+    </div>
+    <script src="password.js"></script>
+  </body>
 </html>
